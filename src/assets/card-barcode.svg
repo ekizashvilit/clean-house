@@ -1,0 +1,17 @@
+<svg id="Card_Barcode" data-name="Card Barcode" xmlns="http://www.w3.org/2000/svg" width="44" height="30" viewBox="0 0 44 30">
+  <rect id="Rectangle_182" data-name="Rectangle 182" width="44" height="30" rx="5" fill="#fbd70d"/>
+  <g id="Group_470" data-name="Group 470" transform="translate(6.381 18.958)">
+    <g id="Group_469" data-name="Group 469">
+      <g id="Group_471" data-name="Group 471">
+        <path id="Path_191" data-name="Path 191" d="M50.933,0V11.042H47.2q0-5.521,0-11.042Z" transform="translate(-37.301)" fill="#645e55"/>
+        <rect id="Rectangle_185" data-name="Rectangle 185" width="2.452" height="11.042" transform="translate(14.926)" fill="#645e55"/>
+        <rect id="Rectangle_186" data-name="Rectangle 186" width="2.473" height="11.042" transform="translate(2.498)" fill="#645e55"/>
+        <path id="Path_192" data-name="Path 192" d="M138.582,0q0,2.782,0,5.561,0,2.739,0,5.481H136.13V0Z" transform="translate(-107.58)" fill="#645e55"/>
+        <rect id="Rectangle_187" data-name="Rectangle 187" width="2.443" height="11.042" transform="translate(19.899)" fill="#645e55"/>
+        <path id="Path_193" data-name="Path 193" d="M30.815,0q0,5.521,0,11.042H29.58V0Z" transform="translate(-23.376)" fill="#645e55"/>
+        <path id="Path_194" data-name="Path 194" d="M119.635,0q0,5.521,0,11.042H118.41V0Z" transform="translate(-93.576)" fill="#645e55"/>
+        <path id="Path_195" data-name="Path 195" d="M1.239,0q0,5.521,0,11.042H0V0Z" fill="#645e55"/>
+      </g>
+    </g>
+  </g>
+</svg>
