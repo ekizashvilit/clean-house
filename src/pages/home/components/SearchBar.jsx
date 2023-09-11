@@ -1,27 +1,27 @@
 import { styled } from "styled-components";
-import Logo from "../assets/Logo.svg";
-import Barcode from "../assets/card-barcode.svg";
-import Toggle from "../assets/toggle.svg";
-import Loop from "../assets/loop.svg";
-import Cart from "../assets/cart.svg";
-import Profile from "../assets/prof-desktop.svg";
+import Logo from "../../../assets/svg/Logo.svg";
+import Barcode from "../../../assets/svg/card-barcode.svg";
+import Toggle from "../../../assets/svg/toggle.svg";
+import Loop from "../../../assets/svg/loop.svg";
+import Cart from "../../../assets/svg/cart.svg";
+import Profile from "../../../assets/svg/prof-desktop.svg";
 
 const SearchBar = () => {
   return (
     <Wrapper>
-      <img src={Toggle} className="hidden toggle" alt="" />
-      <img src={Logo} alt="" className="logo" />
+      <img src={Toggle} className="hidden toggle pointer" alt="" />
+      <img src={Logo} alt="" className="logo pointer" />
 
       <div className="search-bar hidden">
-        <img src={Loop} alt="" />
+        <img src={Loop} alt="" className="pointer" />
         <input type="text" placeholder="პროდუქციის ძებნა" />
       </div>
 
       <div className="cart-profile hidden">
-        <div>
+        <div className="pointer">
           <img src={Cart} alt="cart logo" />
         </div>
-        <img src={Profile} alt="" />
+        <img src={Profile} alt="" className="pointer" />
       </div>
 
       <div className="coins">
@@ -36,10 +36,10 @@ const SearchBar = () => {
 };
 
 const Wrapper = styled.div`
-  margin: 1.5rem 1.2rem;
+  margin: 1.5rem 0;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
 
   .hidden {
     display: none;
@@ -74,12 +74,15 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 768px) {
-    margin: 0;
-    margin-top: 1rem;
+    margin: 1rem 0 1.6rem 0;
     width: 76%;
     display: grid;
     grid-template-columns: auto auto 1fr auto;
     gap: 1.5rem;
+
+    .pointer {
+      cursor: pointer;
+    }
 
     .coins {
       display: none;

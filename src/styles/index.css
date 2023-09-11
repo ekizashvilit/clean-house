@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background: white;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #5d9431;
+}
+
+.swiper-pagination {
+  text-align: right;
+  top: 15px !important;
+  bottom: unset !important;
+  left: -15px !important;
+}
+
+@media (min-width: 768px) {
+  .swiper-pagination {
+    top: 220px !important;
+  }
+}
