@@ -9,37 +9,41 @@ import Profile from "../../../assets/svg/prof-desktop.svg";
 const SearchBar = () => {
   return (
     <Wrapper>
-      <img src={Toggle} className="hidden toggle pointer" alt="" />
-      <img src={Logo} alt="" className="logo pointer" />
+      <div className="searchbar-container">
+        <img src={Toggle} className="hidden toggle pointer" alt="navbar icon" />
+        <img src={Logo} alt="clean house logo" className="logo pointer" />
 
-      <div className="search-bar hidden">
-        <img src={Loop} alt="" className="pointer" />
-        <input type="text" placeholder="პროდუქციის ძებნა" />
-      </div>
-
-      <div className="cart-profile hidden">
-        <div className="pointer">
-          <img src={Cart} alt="cart logo" />
+        <div className="search-bar hidden">
+          <img src={Loop} alt="loop icon" className="pointer" />
+          <input type="text" placeholder="პროდუქციის ძებნა" />
         </div>
-        <img src={Profile} alt="" className="pointer" />
-      </div>
 
-      <div className="coins">
-        <p>
-          207.80
-          <span>ქულა</span>
-        </p>
-        <img src={Barcode} alt="" />
+        <div className="cart-profile hidden">
+          <div className="pointer">
+            <img src={Cart} alt="cart icon" />
+          </div>
+          <img src={Profile} alt="profile logo" className="pointer" />
+        </div>
+
+        <div className="coins">
+          <p>
+            207.80
+            <span>ქულა</span>
+          </p>
+          <img src={Barcode} alt="" />
+        </div>
       </div>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
-  margin: 1.5rem 0;
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
+  .searchbar-container {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-mobile);
+    width: 100%;
+  }
 
   .hidden {
     display: none;
@@ -74,11 +78,20 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 768px) {
-    margin: 1rem 0 1.6rem 0;
-    width: 76%;
-    display: grid;
-    grid-template-columns: auto auto 1fr auto;
-    gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .searchbar-container {
+      margin: 1rem 0 1.6rem 0;
+      /* min-width: 76%; */
+      padding: var(--padding-desktop);
+      max-width: var(--max-width);
+      display: grid;
+      place-items: center;
+      grid-template-columns: auto auto 1fr auto;
+      gap: 1.5rem;
+    }
 
     .pointer {
       cursor: pointer;
@@ -142,6 +155,12 @@ const Wrapper = styled.div`
         left: 47%;
         transform: translate(-50%, -50%);
       }
+    }
+  }
+
+  @media (min-width: 1160px) {
+    .searchbar-container {
+      padding: 0;
     }
   }
 `;

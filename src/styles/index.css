@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@600&display=swap");
 
+:root {
+  --max-width: 1088px;
+  --padding-mobile: 0 1.1rem;
+  --padding-desktop: 0 2rem;
+}
+
 * {
   padding: 0;
   margin: 0;

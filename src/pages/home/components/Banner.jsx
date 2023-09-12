@@ -12,7 +12,7 @@ const Banner = () => {
   return (
     <div style={{ width: "100%" }}>
       <Swiper
-        style={{ width: "90%" }}
+        style={{ maxWidth: "1088px" }}
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
         slidesPerView={1}
