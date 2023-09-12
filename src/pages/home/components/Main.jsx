@@ -17,8 +17,17 @@ const Wrapper = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
   max-width: var(--max-width);
   padding: var(--padding-mobile);
+
+  @media (min-width: 768px) {
+    padding: var(--padding-desktop);
+  }
+
+  @media (min-width: 1160px) {
+    padding: 0;
+  }
 `;
 
 export default Main;
