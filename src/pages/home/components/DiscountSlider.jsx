@@ -24,9 +24,19 @@ const DiscountSlider = () => {
           return (
             <SwiperSlide className="products-wrapper" key={item.id}>
               <span className="discount-rate">{item.discount}</span>
-              {item.top && <img src="/images/top.png" alt="top product" />}
+              {item.top && (
+                <img
+                  src="/images/top.png"
+                  alt="top product"
+                  className="top-product"
+                />
+              )}
               {item.bestSeller && (
-                <img src="/images/best-seller.png" alt="best seller" />
+                <img
+                  src="/images/best-seller.png"
+                  alt="best seller"
+                  className="best-seller"
+                />
               )}
 
               <div className="card">
@@ -37,7 +47,9 @@ const DiscountSlider = () => {
                 </div>
                 <p>{item.description}</p>
                 <DefaultButton icon={<Cart />} text="ყიდვა" />
-                {item.freeDelivery && <FreeDelivery />}
+                {item.freeDelivery && (
+                  <FreeDelivery style={{ width: "100%" }} />
+                )}
               </div>
             </SwiperSlide>
           );
@@ -48,17 +60,34 @@ const DiscountSlider = () => {
 };
 
 const Wrapper = styled.section`
-  .container {
-    background: violet;
-    height: 100px;
-    width: 100px;
-  }
-
   .custom-btn {
     height: 40px;
     max-width: 143px;
     border-radius: 8px;
     flex-direction: row;
+    margin-bottom: 0;
+    /* padding: 0; */
+  }
+
+  .products-wrapper {
+    max-width: 143px;
+    max-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  .discount-rate,
+  .top-product,
+  .best-seller {
+    position: absolute;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 `;
 
