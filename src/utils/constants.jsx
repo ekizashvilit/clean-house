@@ -26,11 +26,14 @@ export const pages = [
   },
 ];
 
-export const categories = [
+export const allCategories = [
   {
     id: 1,
     text: "ფასდაკლებები",
     img: "/public/images/fasdaklebebi.png",
+    textStyle: {
+      color: "red",
+    },
   },
   {
     id: 2,
@@ -57,9 +60,39 @@ export const categories = [
     text: "კოსმეტიკა",
     img: "/public/images/kosmetika.png",
   },
+];
+
+export const brands = [
+  {
+    id: 1,
+    img: "/images/ariel.png",
+  },
+  {
+    id: 2,
+    img: "/images/fairy.png",
+  },
+  {
+    id: 3,
+    img: "/images/pampers.png",
+  },
+  {
+    id: 4,
+    img: "/images/selpak.png",
+  },
+  {
+    id: 5,
+    img: "/images/bagi.png",
+  },
+  {
+    id: 6,
+    img: "/images/cif.png",
+  },
   {
     id: 7,
-    text: "სხვადასხვა",
-    img: "/public/images/fasdaklebebi.png",
+    img: "/images/schwarzkof-logo-mob.png",
+  },
+  {
+    id: 8,
+    img: "/images/colgate.png",
   },
 ];
