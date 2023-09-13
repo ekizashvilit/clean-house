@@ -4,7 +4,6 @@ import RightArrow from "../../../assets/svg/right-arrow.svg";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/scss";
 import "swiper/scss/pagination";
 
@@ -42,7 +41,7 @@ const Banner = () => {
               }}
             >
               <img
-                src="/public/images/schwarzkof-logo-mob.png"
+                src="/images/schwarzkof-logo-mob.png"
                 style={{ height: "55px", width: "108px", paddingLeft: "5px" }}
                 alt=""
               />
@@ -65,7 +64,7 @@ const Banner = () => {
               </div>
             </div>
             <div className="ad-picture">
-              <img src="/public/images/mobile-banner.png" alt="banner" />
+              <img src="/images/mobile-banner.png" alt="banner" />
             </div>
           </div>
         </SwiperSlide>
@@ -91,7 +90,7 @@ const Banner = () => {
               }}
             >
               <img
-                src="/public/images/schwarzkof-logo-mob.png"
+                src="/images/schwarzkof-logo-mob.png"
                 style={{ height: "55px", width: "108px", paddingLeft: "5px" }}
                 alt=""
               />
@@ -114,7 +113,7 @@ const Banner = () => {
               </div>
             </div>
             <div className="ad-picture">
-              <img src="/public/images/mobile-banner.png" alt="banner" />
+              <img src="/images/mobile-banner.png" alt="banner" />
             </div>
           </div>
         </SwiperSlide>
@@ -140,7 +139,7 @@ const Banner = () => {
               }}
             >
               <img
-                src="/public/images/schwarzkof-logo-mob.png"
+                src="/images/schwarzkof-logo-mob.png"
                 style={{ height: "55px", width: "108px", paddingLeft: "5px" }}
                 alt=""
               />
@@ -163,7 +162,7 @@ const Banner = () => {
               </div>
             </div>
             <div className="ad-picture">
-              <img src="/public/images/mobile-banner.png" alt="banner" />
+              <img src="/images/mobile-banner.png" alt="banner" />
             </div>
           </div>
         </SwiperSlide>
@@ -189,7 +188,7 @@ const Banner = () => {
               }}
             >
               <img
-                src="/public/images/schwarzkof-logo-mob.png"
+                src="/images/schwarzkof-logo-mob.png"
                 style={{ height: "55px", width: "108px", paddingLeft: "5px" }}
                 alt=""
               />
@@ -212,7 +211,7 @@ const Banner = () => {
               </div>
             </div>
             <div className="ad-picture">
-              <img src="/public/images/mobile-banner.png" alt="banner" />
+              <img src="/images/mobile-banner.png" alt="banner" />
             </div>
           </div>
         </SwiperSlide>

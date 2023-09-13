@@ -5,6 +5,7 @@ import Categories from "./Categories";
 import DefaultButton from "../../../components/buttons/DefaultButton";
 import { ReactComponent as ToggleBtn } from "../../../assets/svg/categories-toggle-icon.svg";
 import ProductBrands from "./ProductBrands";
+import ProductsOnSale from "./ProductsOnSale";
 
 const Main = () => {
   return (
@@ -15,6 +16,7 @@ const Main = () => {
         <Categories />
       </section>
       <ProductBrands />
+      <ProductsOnSale />
     </Wrapper>
   );
 };

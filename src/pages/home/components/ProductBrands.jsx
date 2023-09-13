@@ -44,7 +44,7 @@ const Wrapper = styled.section`
       img {
         width: 100%;
         height: auto;
-        border-radius: 12px;
+        /* border-radius: 12px; */
       }
     }
   }
