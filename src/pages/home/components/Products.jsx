@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 import ProductsSlider from "./ProductsSlider";
 
-const ProductsOnSale = ({ icon, text }) => {
+const Products = ({ icon, text }) => {
   return (
     <Wrapper>
       <div className="section-title">
@@ -31,4 +31,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default ProductsOnSale;
+export default Products;

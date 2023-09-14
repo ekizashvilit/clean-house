@@ -15,7 +15,7 @@ const ProductsSlider = () => {
   return (
     <Wrapper>
       <Swiper
-        style={{ maxWidth: "100%" }}
+        style={{ minWidth: "100%" }}
         modules={[Navigation, A11y, FreeMode]}
         spaceBetween={50}
         slidesPerView={"auto"}
@@ -68,14 +68,6 @@ const ProductsSlider = () => {
 };
 
 const Wrapper = styled.section`
-  .custom-btn {
-    height: 40px;
-    max-width: 143px;
-    border-radius: 8px;
-    flex-direction: row;
-    margin-bottom: 0;
-  }
-
   .top-product {
     top: -2px;
     right: -10px;
@@ -169,15 +161,13 @@ const Wrapper = styled.section`
     text-decoration: line-through;
   }
 
-  @media (min-width: 768px) {
-    .custom-btn.product-btn {
-      height: 40px;
-      max-width: 143px;
-      border-radius: 8px;
-      flex-direction: row !important;
-      margin-bottom: 0;
-      padding: 8px;
-    }
+  .custom-btn.product-btn {
+    height: 40px;
+    max-width: 143px;
+    border-radius: 8px;
+    flex-direction: row !important;
+    margin-bottom: 0;
+    padding: 8px;
   }
 `;
 

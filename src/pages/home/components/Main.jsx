@@ -5,9 +5,12 @@ import Categories from "./Categories";
 import DefaultButton from "../../../components/buttons/DefaultButton";
 import { ReactComponent as ToggleBtn } from "../../../assets/svg/categories-toggle-icon.svg";
 import { ReactComponent as Percent } from "../../../assets/svg/percent.svg";
+import { ReactComponent as Popular } from "../../../assets/svg/Popular.svg";
 
 import ProductBrands from "./ProductBrands";
-import ProductsOnSale from "./ProductsOnSale";
+import Products from "./Products";
+import FreeDeliveryBanners from "./FreeDeliveryBanners";
+import Frosch from "./Frosch";
 
 const Main = () => {
   return (
@@ -18,7 +21,10 @@ const Main = () => {
         <Categories />
       </section>
       <ProductBrands />
-      <ProductsOnSale icon={<Percent />} text="სააქციო პროდუქტები" />
+      <Products icon={<Percent />} text="სააქციო პროდუქტები" />
+      <FreeDeliveryBanners />
+      <Products icon={<Popular />} text="პოპულარული პროდუქტები" />
+      <Frosch />
     </Wrapper>
   );
 };
