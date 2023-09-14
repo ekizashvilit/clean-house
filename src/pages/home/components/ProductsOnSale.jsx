@@ -1,23 +1,34 @@
 import { styled } from "styled-components";
-import { ReactComponent as Percent } from "../../../assets/svg/percent.svg";
 
-import DiscountSlider from "./DiscountSlider";
+import ProductsSlider from "./ProductsSlider";
 
-const ProductsOnSale = () => {
+const ProductsOnSale = ({ icon, text }) => {
   return (
     <Wrapper>
       <div className="section-title">
         <h3>
-          <Percent />
-          სააქციო პროდუქტები
+          {icon}
+          {text}
         </h3>
         <span></span>
       </div>
-      <DiscountSlider />
+      <ProductsSlider />
     </Wrapper>
   );
 };
 
-const Wrapper = styled.section``;
+const Wrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: var(--max-width);
+  width: 100%;
+
+  .section-title h3 {
+    display: flex;
+    gap: 1rem;
+    color: #645e55;
+  }
+`;
 
 export default ProductsOnSale;

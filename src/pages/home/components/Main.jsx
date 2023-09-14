@@ -4,6 +4,8 @@ import Banner from "./Banner";
 import Categories from "./Categories";
 import DefaultButton from "../../../components/buttons/DefaultButton";
 import { ReactComponent as ToggleBtn } from "../../../assets/svg/categories-toggle-icon.svg";
+import { ReactComponent as Percent } from "../../../assets/svg/percent.svg";
+
 import ProductBrands from "./ProductBrands";
 import ProductsOnSale from "./ProductsOnSale";
 
@@ -16,7 +18,7 @@ const Main = () => {
         <Categories />
       </section>
       <ProductBrands />
-      <ProductsOnSale />
+      <ProductsOnSale icon={<Percent />} text="სააქციო პროდუქტები" />
     </Wrapper>
   );
 };

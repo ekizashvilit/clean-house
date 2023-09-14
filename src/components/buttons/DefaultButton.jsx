@@ -1,8 +1,8 @@
 import { styled } from "styled-components";
 
-const DefaultButton = ({ icon, text }) => {
+const DefaultButton = ({ icon, text, className }) => {
   return (
-    <Wrapper className="custom-btn">
+    <Wrapper className={`custom-btn ${className}`}>
       {icon}
       {text}
     </Wrapper>
