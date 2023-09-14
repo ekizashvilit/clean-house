@@ -6,11 +6,14 @@ import DefaultButton from "../../../components/buttons/DefaultButton";
 import { ReactComponent as ToggleBtn } from "../../../assets/svg/categories-toggle-icon.svg";
 import { ReactComponent as Percent } from "../../../assets/svg/percent.svg";
 import { ReactComponent as Popular } from "../../../assets/svg/Popular.svg";
+import { ReactComponent as Featured } from "../../../assets/svg/featured.svg";
 
 import ProductBrands from "./ProductBrands";
 import Products from "./Products";
 import FreeDeliveryBanners from "./FreeDeliveryBanners";
 import Frosch from "./Frosch";
+import ProductBanner from "./ProductBanner";
+import TwoCards from "./TwoCards";
 
 const Main = () => {
   return (
@@ -24,7 +27,14 @@ const Main = () => {
       <Products icon={<Percent />} text="სააქციო პროდუქტები" />
       <FreeDeliveryBanners />
       <Products icon={<Popular />} text="პოპულარული პროდუქტები" />
-      <Frosch />
+      <ProductBanner src="/images/frosch.png" />
+      <Products icon={<Featured />} text="ჩვენი რჩეული პროდუქტები" />
+      <TwoCards
+        headingOne="უფასო მიტანა"
+        headingTwo="ქულების დაგროვება"
+        paragraphOne="100₾-ზე მეტ შენაძენზე"
+        paragraphTwo="გაიგე რომელ პროდუქტზე შეგიძლია"
+      />
     </Wrapper>
   );
 };
@@ -38,6 +48,10 @@ const Wrapper = styled.main`
   padding: var(--padding-mobile);
   gap: 2rem;
 
+  .wrapper {
+    max-width: 1088px;
+  }
+
   .custom-btn {
     height: 48px;
     margin-bottom: 2rem;
@@ -47,6 +61,16 @@ const Wrapper = styled.main`
   .categories-wrapper {
     width: 100%;
     max-width: var(--max-width);
+  }
+
+  .info-cards {
+    background-color: #f2ecef;
+    color: #645e55;
+  }
+
+  .info-cards:last-child {
+    background: #ecf2f0;
+    /* color: white; */
   }
 
   @media (min-width: 768px) {
