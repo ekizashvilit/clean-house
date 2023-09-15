@@ -10,6 +10,9 @@ const Footer = () => {
 };
 
 const Wrapper = styled.footer`
+  .mobile-footer {
+    margin-bottom: 85.72px;
+  }
   @media (min-width: 768px) {
     .mobile-footer {
       display: none;

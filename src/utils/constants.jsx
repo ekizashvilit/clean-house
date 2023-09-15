@@ -1,3 +1,9 @@
+import { ReactComponent as Home } from "../assets/svg/home.svg";
+import { ReactComponent as Loop } from "../assets/svg/loop.svg";
+import { ReactComponent as Cart } from "../assets/svg/footer-cart.svg";
+import { ReactComponent as Chat } from "../assets/svg/chat.svg";
+import { ReactComponent as FooterToggle } from "../assets/svg/footer-toggle.svg";
+
 export const pages = [
   {
     id: 1,
@@ -199,5 +205,33 @@ export const news = [
     id: 3,
     img: "/images/washing-products.png",
     text: "თხევადი სარეცხი საშუალებები თუ სარეცხი ფხვნილი - პლიუს..",
+  },
+];
+
+export const footerNav = [
+  {
+    id: 1,
+    icon: <Home />,
+    text: "მთავარი",
+  },
+  {
+    id: 2,
+    icon: <Loop />,
+    text: "ძებნა",
+  },
+  {
+    id: 3,
+    icon: <Cart />,
+    text: "კალათა",
+  },
+  {
+    id: 4,
+    icon: <Chat />,
+    text: "ჩატი",
+  },
+  {
+    id: 5,
+    icon: <FooterToggle />,
+    text: "მეტი",
   },
 ];
