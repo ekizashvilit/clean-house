@@ -27,7 +27,7 @@ const NewsSlider = () => {
       >
         {news.map((item) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={item.id}>
               <img src={item.img} alt="news image" />
               <div className="info">
                 <p>{item.text}</p>

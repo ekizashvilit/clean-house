@@ -68,7 +68,11 @@ const Wrapper = styled.header`
     height: auto;
     color: #645e55;
     gap: 0.5rem;
-    position: fixed;
+    position: sticky;
+    z-index: 10;
+    background: white;
+    top: 0;
+    padding-bottom: 0.5rem;
 
     .yellow-line {
       display: none;
