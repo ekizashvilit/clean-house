@@ -181,3 +181,23 @@ export const productsOnSale = [
     freeDelivery: false,
   },
 ];
+
+export const news = [
+  {
+    id: 1,
+    img: "/images/pans.png",
+    text: "როგორ და რით გავრეცხოთ ტაფები და ქვაბები მარტივად",
+  },
+
+  {
+    id: 2,
+    img: "/images/spots.png",
+    text: "8 გავრცელებული ლაქა საახალწლო წვეულებიდან ..",
+  },
+
+  {
+    id: 3,
+    img: "/images/washing-products.png",
+    text: "თხევადი სარეცხი საშუალებები თუ სარეცხი ფხვნილი - პლიუს..",
+  },
+];

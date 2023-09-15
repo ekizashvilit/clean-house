@@ -1,19 +1,18 @@
 import { styled } from "styled-components";
-import SearchBar from "./SearchBar";
-import Banner from "./Banner";
+import Banner from "../../../components/Banner";
 import Categories from "./Categories";
-import DefaultButton from "../../../components/buttons/DefaultButton";
+import DefaultButton from "../../../components/DefaultButton";
 import { ReactComponent as ToggleBtn } from "../../../assets/svg/categories-toggle-icon.svg";
 import { ReactComponent as Percent } from "../../../assets/svg/percent.svg";
 import { ReactComponent as Popular } from "../../../assets/svg/Popular.svg";
 import { ReactComponent as Featured } from "../../../assets/svg/featured.svg";
 
 import ProductBrands from "./ProductBrands";
-import Products from "./Products";
+import Products from "../../../components/Products";
 import FreeDeliveryBanners from "./FreeDeliveryBanners";
-import Frosch from "./Frosch";
-import ProductBanner from "./ProductBanner";
-import TwoCards from "./TwoCards";
+import ProductBanner from "../../../components/ProductBanner";
+import TwoCards from "../../../components/TwoCards";
+import NewsSlider from "./NewsSlider";
 
 const Main = () => {
   return (
@@ -35,6 +34,7 @@ const Main = () => {
         paragraphOne="100₾-ზე მეტ შენაძენზე"
         paragraphTwo="გაიგე რომელ პროდუქტზე შეგიძლია"
       />
+      <NewsSlider />
     </Wrapper>
   );
 };
@@ -70,7 +70,6 @@ const Wrapper = styled.main`
 
   .info-cards:last-child {
     background: #ecf2f0;
-    /* color: white; */
   }
 
   @media (min-width: 768px) {

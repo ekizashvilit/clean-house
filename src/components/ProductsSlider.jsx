@@ -1,7 +1,7 @@
-import { productsOnSale } from "../../../utils/constants";
-import DefaultButton from "../../../components/buttons/DefaultButton";
-import { ReactComponent as FreeDelivery } from "../../../assets/svg/free-delivery.svg";
-import { ReactComponent as Cart } from "../../../assets/svg/cart.svg";
+import { productsOnSale } from "../utils/constants";
+import DefaultButton from "./DefaultButton";
+import { ReactComponent as FreeDelivery } from "../assets/svg/free-delivery.svg";
+import { ReactComponent as Cart } from "../assets/svg/cart.svg";
 import { styled } from "styled-components";
 
 import { Navigation, A11y, FreeMode } from "swiper/modules";

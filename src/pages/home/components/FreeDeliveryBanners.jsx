@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
-import ProductBanner from "./ProductBanner";
-import TwoCards from "./TwoCards";
+import ProductBanner from "../../../components/ProductBanner";
+import TwoCards from "../../../components/TwoCards";
 
 const FreeDeliveryBanners = () => {
   return (
@@ -25,13 +25,13 @@ const Wrapper = styled.section`
   gap: 2rem;
 
   .info-cards {
-    background-color: #fbd70d;
-    color: #645e55;
+    background-color: #fbd70d !important;
+    color: #645e55 !important;
   }
 
   .info-cards:last-child {
-    background: #5d9431;
-    color: white;
+    background: #5d9431 !important;
+    color: white !important;
   }
 `;
 

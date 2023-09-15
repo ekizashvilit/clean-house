@@ -84,7 +84,6 @@ const Wrapper = styled.div`
 
     .searchbar-container {
       margin: 1rem 0 1.6rem 0;
-      /* min-width: 76%; */
       padding: var(--padding-desktop);
       max-width: var(--max-width);
       display: grid;

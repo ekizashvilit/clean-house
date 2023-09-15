@@ -1,5 +1,5 @@
-import Discount from "../../../assets/svg/25-discount.svg";
-import RightArrow from "../../../assets/svg/right-arrow.svg";
+import Discount from "../assets/svg/25-discount.svg";
+import RightArrow from "../assets/svg/right-arrow.svg";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
