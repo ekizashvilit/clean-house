@@ -5,6 +5,7 @@ import { ReactComponent as Facebook } from "../../../assets/svg/facebook.svg";
 import { ReactComponent as Instagram } from "../../../assets/svg/instagram.svg";
 import { ReactComponent as Linkedin } from "../../../assets/svg/linkedin.svg";
 import { ReactComponent as Youtube } from "../../../assets/svg/youtube.svg";
+import LowerFooter from "./LowerFooter";
 
 const MobileFooter = () => {
   return (
@@ -25,7 +26,7 @@ const MobileFooter = () => {
           </div>
         </div>
       </div>
-      <div className="lower-footer">© 2023. ყველა უფლება დაცულია</div>
+      <LowerFooter />
       <FooterNavbar />
     </Wrapper>
   );
@@ -45,17 +46,6 @@ const Wrapper = styled.div`
       letter-spacing: 1px;
       padding-left: 1rem;
     }
-  }
-
-  .lower-footer {
-    background-color: #5d9431;
-    color: white;
-    height: 53px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    letter-spacing: 1px;
   }
 
   .socials-wrapper {

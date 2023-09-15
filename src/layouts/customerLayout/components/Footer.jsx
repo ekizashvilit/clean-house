@@ -1,10 +1,12 @@
 import { styled } from "styled-components";
 import MobileFooter from "./MobileFooter";
+import DesktopFooter from "./DesktopFooter";
 
 const Footer = () => {
   return (
     <Wrapper>
       <MobileFooter />
+      <DesktopFooter />
     </Wrapper>
   );
 };
