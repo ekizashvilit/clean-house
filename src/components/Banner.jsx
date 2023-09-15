@@ -1,8 +1,6 @@
 import Discount from "../assets/svg/25-discount.svg";
 import RightArrow from "../assets/svg/right-arrow.svg";
-
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-
+import { Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import "swiper/scss/pagination";
@@ -12,12 +10,10 @@ const Banner = () => {
     <div style={{ width: "100%" }}>
       <Swiper
         style={{ maxWidth: "1088px" }}
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Pagination, Scrollbar, A11y]}
         spaceBetween={50}
         slidesPerView={1}
-        navigation
         pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
       >
         <SwiperSlide>
           <div

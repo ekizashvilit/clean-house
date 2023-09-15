@@ -4,7 +4,7 @@ import Barcode from "../../../assets/svg/card-barcode.svg";
 import Toggle from "../../../assets/svg/toggle.svg";
 import Loop from "../../../assets/svg/loop.svg";
 import Cart from "../../../assets/svg/cart.svg";
-import Profile from "../../../assets/svg/prof-desktop.svg";
+import { ReactComponent as Profile } from "../../../assets/svg/prof-desktop.svg";
 
 const SearchBar = () => {
   return (
@@ -20,9 +20,15 @@ const SearchBar = () => {
 
         <div className="cart-profile hidden">
           <div className="pointer">
-            <img src={Cart} alt="cart icon" />
+            <img
+              src="/src/assets/svg/cart.svg"
+              className="cart"
+              alt="cart icon"
+            />
           </div>
-          <img src={Profile} alt="profile logo" className="pointer" />
+          <div className="pointer profile-icon">
+            <img src="/src/assets/svg/profile-icon.svg" alt="profile icon" />
+          </div>
         </div>
 
         <div className="coins">
@@ -147,13 +153,17 @@ const Wrapper = styled.div`
       justify-content: center;
       align-items: center;
       position: relative;
+    }
 
-      img {
-        position: absolute;
-        top: 55%;
-        left: 47%;
-        transform: translate(-50%, -50%);
-      }
+    .cart {
+      position: absolute;
+      top: 55%;
+      left: 47%;
+      transform: translate(-50%, -50%);
+    }
+
+    .cart-profile div:hover {
+      background-color: #54852c;
     }
   }
 

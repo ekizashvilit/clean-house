@@ -3,7 +3,7 @@ import { ReactComponent as Phone } from "../../../assets/svg/header-phone.svg";
 import { ReactComponent as Mail } from "../../../assets/svg/header-mail.svg";
 import { pages } from "../../../utils/constants";
 import { Link } from "react-router-dom";
-import SearchBar from "../../../pages/home/components/SearchBar";
+import SearchBar from "./SearchBar";
 
 const Header = () => {
   return (
@@ -68,6 +68,7 @@ const Wrapper = styled.header`
     height: auto;
     color: #645e55;
     gap: 0.5rem;
+    position: fixed;
 
     .yellow-line {
       display: none;

@@ -20,6 +20,10 @@ const Wrapper = styled.button`
   align-items: center;
   gap: 1rem;
   cursor: pointer;
+
+  &:hover {
+    background: #54852c;
+  }
 `;
 
 export default DefaultButton;

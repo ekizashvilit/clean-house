@@ -3,9 +3,7 @@ import DefaultButton from "./DefaultButton";
 import { ReactComponent as FreeDelivery } from "../assets/svg/free-delivery.svg";
 import { ReactComponent as Cart } from "../assets/svg/cart.svg";
 import { styled } from "styled-components";
-
-import { Navigation, A11y, FreeMode } from "swiper/modules";
-
+import { A11y, FreeMode } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import "swiper/scss/pagination";
@@ -16,10 +14,9 @@ const ProductsSlider = () => {
     <Wrapper>
       <Swiper
         style={{ minWidth: "100%" }}
-        modules={[Navigation, A11y, FreeMode]}
+        modules={[A11y, FreeMode]}
         spaceBetween={50}
         slidesPerView={"auto"}
-        navigation
         freeMode
       >
         {productsOnSale.map((item) => {

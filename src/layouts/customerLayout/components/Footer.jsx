@@ -1,10 +1,20 @@
+import { styled } from "styled-components";
 import MobileFooter from "./MobileFooter";
 
 const Footer = () => {
   return (
-    <div>
+    <Wrapper>
       <MobileFooter />
-    </div>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.footer`
+  @media (min-width: 768px) {
+    .mobile-footer {
+      display: none;
+    }
+  }
+`;
+
 export default Footer;
