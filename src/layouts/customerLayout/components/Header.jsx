@@ -4,10 +4,12 @@ import { ReactComponent as Mail } from "../../../assets/svg/header-mail.svg";
 import { pages } from "../../../utils/constants";
 import { Link } from "react-router-dom";
 import SearchBar from "./SearchBar";
+import { ReactComponent as FooterLogo } from "../../../assets/svg/footer-logo.svg";
 
 const Header = () => {
   return (
     <Wrapper>
+      <FooterLogo style={{ display: "none" }}></FooterLogo>
       <nav className="header-wrapper">
         <div className="nav-container">
           <div className="contact">
