@@ -10,6 +10,21 @@ import "swiper/scss/pagination";
 import "swiper/scss/free-mode";
 
 const ProductsSlider = () => {
+  const calculateDiscount = (newPrice, oldPrice) => {
+    const discount = ((oldPrice - newPrice) / oldPrice) * 100;
+    return Math.round(discount);
+  };
+
+  const calculateNewPrice = (discount, oldPrice) => {
+    const newPrice = oldPrice - (oldPrice * discount) / 100;
+    return newPrice.toFixed(2);
+  };
+
+  const calculateOldPrice = (newPrice, discount) => {
+    const oldPrice = (newPrice * 100) / (100 - discount);
+    return oldPrice.toFixed(2);
+  };
+
   return (
     <Wrapper>
       <Swiper
@@ -22,7 +37,12 @@ const ProductsSlider = () => {
         {productsOnSale.map((item) => {
           return (
             <SwiperSlide className="products-wrapper" key={item.id}>
-              <span className="discount-rate">-{item.discount}%</span>
+              <span className="discount-rate">
+                -
+                {item.discount ||
+                  calculateDiscount(item.newPrice, item.oldPrice)}
+                %
+              </span>
               {item.top && (
                 <img
                   src="/images/top.png"
@@ -45,8 +65,16 @@ const ProductsSlider = () => {
                   className="product-image"
                 />
                 <div className="price-wrapper">
-                  <span className="new-price">{item.newPrice} ₾</span>
-                  <span className="old-price">{item.oldPrice} ₾</span>
+                  <span className="new-price">
+                    {item.newPrice ||
+                      calculateNewPrice(item.oldPrice, item.discount)}{" "}
+                    ₾
+                  </span>
+                  <span className="old-price">
+                    {item.oldPrice ||
+                      calculateOldPrice(item.newPrice, item.discount)}{" "}
+                    ₾
+                  </span>
                 </div>
                 <p>{item.description}</p>
                 <DefaultButton
@@ -137,10 +165,6 @@ const Wrapper = styled.section`
     gap: 7px;
     flex-direction: row;
     align-items: center;
-  }
-
-  .price-wrapper span:first-child {
-    flex: 0 0 35%;
   }
 
   .price-wrapper span:last-child {

@@ -43,17 +43,19 @@ const Wrapper = styled.div`
     justify-items: center;
     gap: 3rem;
     padding: 65px 1rem;
+    max-width: var(--max-width);
+    margin: auto;
   }
 
   .news {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     width: 100%;
+    max-width: 436px;
 
     input {
       width: 100%;
-      max-width: 436px;
     }
   }
 
@@ -71,9 +73,8 @@ const Wrapper = styled.div`
   @media (min-width: 1088px) {
     font-size: 14px;
 
-    .desktop-footer-wrapper {
-      padding-left: 170px;
-      padding-right: 170px;
+    .for-companies {
+      gap: 2rem;
     }
   }
 `;

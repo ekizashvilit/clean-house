@@ -106,11 +106,10 @@ export const brands = [
 export const productsOnSale = [
   {
     id: 1,
-    // discount: 40,
     top: true,
     bestSeller: true,
     img: "/images/sale-1.png",
-    newPrice: 6.35,
+    discount: 25,
     oldPrice: 12.5,
     description: "DELIA 35 + ნაოჭების საწინააღგმდეგო აღმდგენი",
     freeDelivery: true,
@@ -121,31 +120,29 @@ export const productsOnSale = [
     top: false,
     bestSeller: false,
     img: "/images/sale-2.png",
-    discount: 24,
-    oldPrice: 8.7,
+    newPrice: 6.95,
+    oldPrice: 8.75,
     description: "GARNIER Color Naturals N 111 თმის საღებავი 110 მლ (გარნიე)",
     freeDelivery: true,
   },
 
   {
     id: 3,
-    discount: 30,
     top: false,
     bestSeller: false,
     img: "/images/sale-3.png",
-    // newPrice: "15.60 ₾",
-    oldPrice: 20.2,
+    newPrice: 15.62,
+    discount: 28,
     description: "SANO Maxima Sensitive ბავშვის სარეცხი ფხვნილი",
     freeDelivery: false,
   },
 
   {
     id: 4,
-    discount: 28,
     top: false,
     bestSeller: false,
     img: "/images/sale-4.png",
-    // newPrice: "6.35 ₾",
+    newPrice: 13.5,
     oldPrice: 19.7,
     description: "SAVEX 2in1 FRESH უნივერსალური სარეცხი ფხვნილი",
     freeDelivery: true,
@@ -153,11 +150,10 @@ export const productsOnSale = [
 
   {
     id: 5,
-    discount: 25,
     top: false,
     bestSeller: false,
     img: "/images/sale-5.png",
-    // newPrice: "6.35 ₾",
+    newPrice: 25.65,
     oldPrice: 32.5,
     description: "GILLETTE VENUS BREEZE საპარსი პირი 2 ც (ჯილეტი)",
     freeDelivery: false,
@@ -165,11 +161,10 @@ export const productsOnSale = [
 
   {
     id: 6,
-    discount: 25,
     top: false,
     bestSeller: false,
     img: "/images/sale-6.png",
-    // newPrice: "6.35 ₾",
+    newPrice: 32.6,
     oldPrice: 42.2,
     description: "SELPAK 3 ფენიანი ტუალეტის ქაღალდი 32 ც (სელპაკი)",
     freeDelivery: true,
@@ -177,12 +172,13 @@ export const productsOnSale = [
 
   {
     id: 7,
-    discount: 32,
     top: false,
     bestSeller: false,
     img: "/images/sale-7.png",
     newPrice: 5.7,
-    // oldPrice: "12.50 ₾",
+    oldPrice: 8.5,
+    newPrice: 5.7,
+
     description: "DELIA 35 + ნაოჭების საწინააღგმდეგო აღმდგენი",
     freeDelivery: false,
   },
@@ -275,5 +271,31 @@ export const company = [
   {
     id: 4,
     text: "კარიერა ჩვენთან",
+  },
+];
+
+export const modalItems = [
+  {
+    id: 1,
+    img: "/images/module-1.png",
+    desc: "Frosch ზედაპირის და იატაკის საწმენდი სითხე 1ლ (ფროში)",
+    price: 10.1,
+    oldPrice: 42.2,
+  },
+
+  {
+    id: 2,
+    img: "/images/module-1.png",
+    desc: "Frosch ზედაპირის და იატაკის საწმენდი სითხე 1ლ (ფროში)",
+    price: 29.95,
+    oldPrice: "",
+  },
+
+  {
+    id: 3,
+    img: "/images/module-3.png",
+    desc: "Frosch ზედაპირის და იატაკის საწმენდი სითხე 1ლ (ფროში)",
+    price: 6.55,
+    oldPrice: "",
   },
 ];

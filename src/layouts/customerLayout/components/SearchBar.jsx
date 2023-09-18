@@ -5,15 +5,20 @@ import Toggle from "../../../assets/svg/toggle.svg";
 import Loop from "../../../assets/svg/loop.svg";
 import Cart from "../../../assets/svg/cart.svg";
 import { ReactComponent as Profile } from "../../../assets/svg/prof-desktop.svg";
+import { useGlobalContext } from "../../../context";
+import Modal from "./Modal";
 
 const SearchBar = () => {
+  const { openModal } = useGlobalContext();
+
   return (
     <Wrapper>
+      <Modal />
       <div className="searchbar-container">
         <img src={Toggle} className="hidden toggle pointer" alt="navbar icon" />
         <img src={Logo} alt="clean house logo" className="logo pointer" />
 
-        <div className="search-bar hidden">
+        <div className="search-bar hidden" onClick={openModal}>
           <img src={Loop} alt="loop icon" className="pointer" />
           <input type="text" placeholder="პროდუქციის ძებნა" />
         </div>
@@ -49,6 +54,27 @@ const Wrapper = styled.div`
     justify-content: space-between;
     padding: var(--padding-mobile);
     width: 100%;
+  }
+
+  .modal-overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: grid;
+    justify-items: center;
+    padding-top: 3rem;
+    visibility: hidden;
+    z-index: 100;
+    transition: all 0.3s linear;
+  }
+
+  .show-modal {
+    visibility: visible;
+    z-index: 100;
   }
 
   .hidden {
